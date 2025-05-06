@@ -35,7 +35,7 @@
 .. |Tracking| image:: https://img.shields.io/badge/issue_tracking-github-blue
         :target: https://github.com/Billingegroup/montypy/issues
 
-PA demo Python package created with Level 5 scikit-package standards.
+A demo Python package created with Level 5 scikit-package standards.
 
 * LONGER DESCRIPTION HERE
 

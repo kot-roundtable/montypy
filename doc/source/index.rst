@@ -4,7 +4,7 @@
 
 .. |title| replace:: montypy documentation
 
-montypy - PA demo Python package created with Level 5 scikit-package standards.
+montypy - A demo Python package created with Level 5 scikit-package standards.
 
 | Software version |release|.
 | Last updated |today|.

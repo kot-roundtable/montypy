@@ -12,7 +12,7 @@
 # See LICENSE.rst for license information.
 #
 ##############################################################################
-"""PA demo Python package created with Level 5 scikit-package standards."""
+"""A demo Python package created with Level 5 scikit-package standards."""
 
 # package version
 from montypy.version import __version__

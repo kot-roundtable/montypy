@@ -11,7 +11,7 @@ authors = [
 maintainers = [
   { name="Simon Billinge", email="sb2896@columbia.edu" },
 ]
-description = "PA demo Python package created with Level 5 scikit-package standards."
+description = "A demo Python package created with Level 5 scikit-package standards."
 keywords = ['scikit', 'demo', 'template', 'Python']
 readme = "README.rst"
 requires-python = ">=3.11, <3.14"
