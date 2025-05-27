@@ -6,13 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "montypy"
 dynamic=['version', 'dependencies']
 authors = [
-  { name="Simon Billinge", email="sb2896@columbia.edu" },
+  { name="Sir Lancelot", email="sirlancelotbrave@montypy.co" },
 ]
 maintainers = [
-  { name="Simon Billinge", email="sb2896@columbia.edu" },
+  { name="Sir Lancelot", email="sirlancelotbrave@montypy.co" },
 ]
-description = "A demo Python package created with Level 5 scikit-package standards."
-keywords = ['scikit', 'demo', 'template', 'Python']
+description = "A Python package for the the Knights of the Round Table."
+keywords = ['knights', 'castle', 'Monty', 'Python']
 readme = "README.rst"
 requires-python = ">=3.11, <3.14"
 classifiers = [
@@ -33,8 +33,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Billingegroup/montypy/"
-Issues = "https://github.com/Billingegroup/montypy/issues/"
+Homepage = "https://github.com/kot-roundtable/montypy/"
+Issues = "https://github.com/kot-roundtable/montypy/issues/"
 
 [tool.setuptools-git-versioning]
 enabled = true

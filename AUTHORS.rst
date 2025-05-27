@@ -1,10 +1,10 @@
 Authors
 =======
 
-Sangjoon Lee, Simon Billinge, Billinge Group members
+Sir Lancelot, Sir Robin, King Arthur
 
 Contributors
 ------------
 
 For a list of contributors, visit
-https://github.com/Billingegroup/montypy/graphs/contributors
+https://github.com/kot-roundtable/montypy/graphs/contributors
