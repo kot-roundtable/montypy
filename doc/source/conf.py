@@ -18,6 +18,12 @@ import time
 from importlib.metadata import version
 from pathlib import Path
 
+# Attempt to import the version dynamically from GitHub tag.
+try:
+    fullversion = version("montypy")
+except Exception:
+    fullversion = "No version found. The correct version will appear in the released version."
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use Path().resolve() to make it absolute, like shown here.
@@ -26,7 +32,7 @@ sys.path.insert(0, str(Path("../..").resolve()))
 sys.path.insert(0, str(Path("../../src").resolve()))
 
 # abbreviations
-ab_authors = "Sangjoon Lee, Simon Billinge, Billinge Group members"
+ab_authors = "Sir Lancelot, Sir Robin, King Arthur"
 
 # -- General configuration ------------------------------------------------
 
@@ -43,6 +49,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
     "sphinx_rtd_theme",
+    "sphinx_copybutton",
     "m2r",
 ]
 
@@ -62,13 +69,12 @@ master_doc = "index"
 
 # General information about the project.
 project = "montypy"
-copyright = "%Y, The Trustees of Columbia University in the City of New York"
+copyright = "%Y, The Knights of the Round Table"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 
-fullversion = version(project)
 # The short X.Y version.
 version = "".join(fullversion.split(".post")[:1])
 # The full version, including alpha/beta/rc tags.
@@ -87,6 +93,11 @@ year = today.split()[-1]
 # today_fmt = '%B %d, %Y'
 # substitute YEAR in the copyright string
 copyright = copyright.replace("%Y", year)
+
+# For sphinx_copybutton extension.
+# Do not copy "$" for shell commands in code-blocks.
+copybutton_prompt_text = r"^\$ "
+copybutton_prompt_is_regexp = True
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -125,7 +136,7 @@ html_theme = "sphinx_rtd_theme"
 
 html_context = {
     "display_github": True,
-    "github_user": "Billingegroup",
+    "github_user": "kot-roundtable",
     "github_repo": "montypy",
     "github_version": "main",
     "conf_py_path": "/doc/source/",
